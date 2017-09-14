@@ -9,7 +9,7 @@ Index File (View) -> Load Data (Logic/Controller), The LoadData file interacts w
 WAMP SERVER 3.0.6
 -> PHP 5.6
 -> Apache 2.4
--> MySQL 5.7
+-> MySQL 5.7,
 HTML5, CSS and JS.
 
 # Installation Steps
