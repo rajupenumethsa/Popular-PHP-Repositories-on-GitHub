@@ -20,3 +20,7 @@ HTML5, CSS and JS.
 5. Log into PhpMyAdmin using URL "http://localhost/phpmyadmin/index.php" with username "root" and passowrd "".
 6. Find the SQL file (Query.sql) in the project folder. Import the sql file and run the queries.
 7. Enter http://localhost/ApiProject in your browser window.
+
+# References
+https://developer.github.com/v3/
+https://developer.github.com/v3/search/
