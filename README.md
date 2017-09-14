@@ -17,4 +17,6 @@ HTML5, CSS and JS.
 2. Clone this repository to your computer and move the ApiProject folder to C:\wamp(64)\www
 3. Add 127.0.0.1 localhost to your hosts file.
 4. Enable mod_rewrite in Apache.
-5. Enter http://localhost/ApiProject in your browser window.
+5. Log into PhpMyAdmin using URL "http://localhost/phpmyadmin/index.php" with username "root" and passowrd "".
+6. Find the SQL file (Query.sql) in the project folder. Import the sql file and run the queries.
+7. Enter http://localhost/ApiProject in your browser window.
