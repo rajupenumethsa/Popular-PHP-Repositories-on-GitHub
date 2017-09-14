@@ -16,4 +16,5 @@ HTML5, CSS and JS.
 1. Download and Install WampServer 3.0.6
 2. Clone this repository to your computer and move the ApiProject folder to C:\wamp(64)\www
 3. Add 127.0.0.1 localhost to your hosts file.
-4. Enter http://localhost/ApiProject in your browser window.
+4. Enable mod_rewrite in Apache.
+5. Enter http://localhost/ApiProject in your browser window.
