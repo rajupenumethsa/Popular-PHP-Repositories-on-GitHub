@@ -13,15 +13,18 @@ WAMP SERVER 3.0.6
 HTML5, CSS and JS.
 
 # Installation Steps
-1. Download and Install WampServer 3.0.6
-2. Start Wampserver.
-3. Clone this repository to your computer and move the ApiProject folder to C:\wamp(64)\www
-4. Add 127.0.0.1 localhost to your hosts file.
-5. Enable mod_rewrite in Apache.
-6. Log into PhpMyAdmin using URL "http://localhost/phpmyadmin/index.php" with username "root" and passowrd "".
-7. Find the SQL file (Query.sql) in the project folder. Import the sql file and run the queries.
-8. Enter http://localhost/ApiProject in your browser window.
+1. If your system has Wampserver installed before, move to step 3.
+2. Download and Install WampServer 3.0.6
+3. Start Wampserver.
+4. Clone this repository to your computer and move the ApiProject folder to C:\wamp(64)\www
+5. Add 127.0.0.1 localhost to your hosts file (located in windows generally at "C:\Windows\System32\drivers\etc").
+6. Enable mod_rewrite in Apache.
+7. Log into PhpMyAdmin using your username and password. (username"root" and password "" if wampserver is newly installed).
+8. Find the SQL file (Query.sql) in the project folder. Import the sql file and run the queries.
+9. Find "db_config" file and update your database settings.
+10. Enter http://localhost/ApiProject in your browser window.
 
 # References
 https://developer.github.com/v3/
 https://developer.github.com/v3/search/
+http://www.orchidbox.com/post.php?title=How_to_enable_mod_rewrite_module_in_apache_in_xampp_wamp
