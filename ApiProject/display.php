@@ -1,4 +1,5 @@
 <?php
+require_once ("db_config.php");
 session_start();
 
 $stars = NULL;
@@ -6,7 +7,8 @@ if (isset($_SESSION['stars'])) {
 	$stars = $_SESSION['stars'];
 }
 
-$mysqli = new mysqli("localhost", "root", "", "GitHubProjects");
+//$mysqli = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
 $query = "SELECT * FROM Projects";
 if (!empty($stars))

@@ -1,5 +1,5 @@
 <?php
-//require_once ("config.php");
+require_once ("db_config.php");
 //$url = "https://api.github.com/repos/laravel/laravel";
 
 if ($_POST) {
@@ -27,7 +27,7 @@ if ($_POST) {
 		$items = $jsonresponse['items'];
 		$length = count($items);
 
-		$mysqli = new mysqli("localhost", "root", "", "GitHubProjects");
+		$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 		$ir = $ur = 0;
 
 		for ($i=0; $i < $length; $i++) {

@@ -1,10 +1,12 @@
 <?php
+require_once ("db_config.php");
 
 if ($_POST) {
 	if (isset($_POST["id"]))
 		$id = $_POST["id"];
 	
-	$mysqli = new mysqli("localhost", "root", "", "GitHubProjects");
+	// $mysqli = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+	$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 	
 	$query = "SELECT * FROM Projects WHERE id = $id";
 	$query = mysqli_query($mysqli, $query);
