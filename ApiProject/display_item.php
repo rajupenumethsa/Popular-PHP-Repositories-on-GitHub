@@ -12,6 +12,8 @@ if ($_POST) {
 	$query = mysqli_query($mysqli, $query);
 	if (mysqli_num_rows($query) == 1) {
 		$row = mysqli_fetch_assoc($query);
+	} else {
+		header('Location: error.html');
 	}
 } else {
 	header('Location: error.html');
@@ -61,7 +63,7 @@ if ($_POST) {
 					<td><?php echo $row["stars"]; ?></td>
 				</tr>
 			</table><br><br>
-			<a href="index.html"><img style="width: 150px; height: 150px;" src="public/images/GitHub.png" alt="GitHub"></a>
+			<a href="index.php"><img style="width: 150px; height: 150px;" src="public/images/GitHub.png" alt="GitHub"></a>
 			<h4>Click on the above image to redirect to Homepage.</h4>
 		</div>
 	</body>

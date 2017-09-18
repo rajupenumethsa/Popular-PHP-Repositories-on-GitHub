@@ -28,6 +28,9 @@ $totalRows = mysqli_num_rows($result);
 	</head>
 	<body>
 		<div id="workbench">
+		<?php if ($totalRows == 0) { ?>
+			<h2 style="color: red;">No PHP Github projects found.<br>Please try again with different input.</br></h2>
+		<?php } else {?>
 			<h2>PHP Repositories with <?php echo $stars ?> or more stars count : <?php echo $totalRows ?></h2>
 			<table id="table-main" cellpadding="5" cellspacing="5">
 			
@@ -116,8 +119,9 @@ $totalRows = mysqli_num_rows($result);
 					</tr>
 				</tbody>
 			</table><br>
+		<?php } ?>
 		<div id="workbench">
-			<a href="index.html"><img style="width: 150px; height: 150px;" src="public/images/GitHub.png" alt="GitHub"></a>
+			<a href="index.php"><img style="width: 150px; height: 150px;" src="public/images/GitHub.png" alt="GitHub"></a>
 			<h4 style="margin: 0px;">Click on the above image to redirect to Homepage.</h4>
 		</div>
 	</body>

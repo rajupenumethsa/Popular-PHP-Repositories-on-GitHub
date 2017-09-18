@@ -66,6 +66,7 @@
     display: inline-block;
     font-size: 14px;
 	font-weight: bold;
+	font-family: Arial, verdana;
 }
 
 #button_view {
@@ -78,6 +79,7 @@
     display: inline-block;
     font-size: 12px;
 	font-weight: bold;
+	font-family: Arial, verdana;
 }
 
 form {
