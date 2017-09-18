@@ -22,7 +22,8 @@ HTML5, CSS and JS.
 7. Log into PhpMyAdmin using your username and password. (username"root" and password "" if wampserver is newly installed).
 8. Find the SQL file (Query.sql) in the project folder. Import the sql file and run the queries.
 9. Find "db_config" file and update your database settings.
-10. Enter http://localhost/ApiProject in your browser window.
+10. Restart All services in Wampserver.
+11. Enter http://localhost/ApiProject in your browser window.
 
 # References
 https://developer.github.com/v3/
